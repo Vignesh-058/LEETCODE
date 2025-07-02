@@ -6,7 +6,7 @@ def lcp_h(strs):
     for i in range(1, len(strs)):
         while strs[i].find(prefix) != 0:
             prefix = prefix[0:len(prefix)-1]  # Fixed assignment
-            if prefix == "":
+            if prefix == "" :
                 return ""
     return prefix
 
